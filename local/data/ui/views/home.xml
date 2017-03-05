@@ -1,0 +1,6 @@
+<dashboard>
+  <label>Home</label>
+  <row>
+    <panel ref="welcome" app="cognia-receiver"></panel>
+  </row>
+</dashboard>

@@ -1,0 +1,182 @@
+<dashboard>
+  <label>Overview</label>
+  <row>
+    <panel>
+      <viz type="status_indicator_app.status_indicator">
+        <title>Events</title>
+        <search>
+          <query>tag=cognia|stats count</query>
+          <earliest>-24h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="status_indicator_app.status_indicator.colorBy">static_color</option>
+        <option name="status_indicator_app.status_indicator.fillTarget">background</option>
+        <option name="status_indicator_app.status_indicator.fixIcon">info-circle</option>
+        <option name="status_indicator_app.status_indicator.icon">fix_icon</option>
+        <option name="status_indicator_app.status_indicator.precision">0</option>
+        <option name="status_indicator_app.status_indicator.showOption">1</option>
+        <option name="status_indicator_app.status_indicator.staticColor">#65a637</option>
+        <option name="status_indicator_app.status_indicator.useColors">true</option>
+        <option name="status_indicator_app.status_indicator.useThousandSeparator">true</option>
+      </viz>
+    </panel>
+    <panel>
+      <viz type="status_indicator_app.status_indicator">
+        <title>Device Updates</title>
+        <search>
+          <query>tag=cognia tag=device|stats count</query>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="status_indicator_app.status_indicator.colorBy">static_color</option>
+        <option name="status_indicator_app.status_indicator.fillTarget">background</option>
+        <option name="status_indicator_app.status_indicator.fixIcon">mobile</option>
+        <option name="status_indicator_app.status_indicator.icon">fix_icon</option>
+        <option name="status_indicator_app.status_indicator.precision">0</option>
+        <option name="status_indicator_app.status_indicator.showOption">1</option>
+        <option name="status_indicator_app.status_indicator.staticColor">#6db7c6</option>
+        <option name="status_indicator_app.status_indicator.useColors">true</option>
+        <option name="status_indicator_app.status_indicator.useThousandSeparator">true</option>
+      </viz>
+    </panel>
+    <panel>
+      <viz type="status_indicator_app.status_indicator">
+        <title>User Updates</title>
+        <search>
+          <query>tag=cognia tag=person|stats count</query>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="status_indicator_app.status_indicator.colorBy">static_color</option>
+        <option name="status_indicator_app.status_indicator.fillTarget">background</option>
+        <option name="status_indicator_app.status_indicator.fixIcon">user</option>
+        <option name="status_indicator_app.status_indicator.icon">fix_icon</option>
+        <option name="status_indicator_app.status_indicator.precision">0</option>
+        <option name="status_indicator_app.status_indicator.showOption">1</option>
+        <option name="status_indicator_app.status_indicator.staticColor">#f7bc38</option>
+        <option name="status_indicator_app.status_indicator.useColors">true</option>
+        <option name="status_indicator_app.status_indicator.useThousandSeparator">true</option>
+      </viz>
+    </panel>
+    <panel>
+      <viz type="status_indicator_app.status_indicator">
+        <title>People Updates</title>
+        <search>
+          <query>tag=cognia tag=user|stats count</query>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="status_indicator_app.status_indicator.colorBy">static_color</option>
+        <option name="status_indicator_app.status_indicator.fillTarget">background</option>
+        <option name="status_indicator_app.status_indicator.fixIcon">users</option>
+        <option name="status_indicator_app.status_indicator.icon">fix_icon</option>
+        <option name="status_indicator_app.status_indicator.precision">0</option>
+        <option name="status_indicator_app.status_indicator.showOption">1</option>
+        <option name="status_indicator_app.status_indicator.staticColor">#f58f39</option>
+        <option name="status_indicator_app.status_indicator.useColors">true</option>
+        <option name="status_indicator_app.status_indicator.useThousandSeparator">true</option>
+      </viz>
+    </panel>
+    <panel>
+      <viz type="status_indicator_app.status_indicator">
+        <title>Policy Updates</title>
+        <search>
+          <query>tag=cognia tag=policy tag=set|stats count</query>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="status_indicator_app.status_indicator.colorBy">static_color</option>
+        <option name="status_indicator_app.status_indicator.fillTarget">background</option>
+        <option name="status_indicator_app.status_indicator.fixIcon">code</option>
+        <option name="status_indicator_app.status_indicator.icon">fix_icon</option>
+        <option name="status_indicator_app.status_indicator.precision">0</option>
+        <option name="status_indicator_app.status_indicator.showOption">1</option>
+        <option name="status_indicator_app.status_indicator.staticColor">#d93f3c</option>
+        <option name="status_indicator_app.status_indicator.useColors">true</option>
+        <option name="status_indicator_app.status_indicator.useThousandSeparator">true</option>
+      </viz>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
+        <title>Events by Type</title>
+        <search>
+          <query>tag=cognia|stats count by eventType</query>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
+        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.axisTitleY.visibility">visible</option>
+        <option name="charting.axisTitleY2.visibility">visible</option>
+        <option name="charting.axisX.scale">linear</option>
+        <option name="charting.axisY.scale">linear</option>
+        <option name="charting.axisY2.enabled">0</option>
+        <option name="charting.axisY2.scale">inherit</option>
+        <option name="charting.chart">pie</option>
+        <option name="charting.chart.bubbleMaximumSize">50</option>
+        <option name="charting.chart.bubbleMinimumSize">10</option>
+        <option name="charting.chart.bubbleSizeBy">area</option>
+        <option name="charting.chart.nullValueMode">gaps</option>
+        <option name="charting.chart.showDataLabels">none</option>
+        <option name="charting.chart.sliceCollapsingThreshold">0.005</option>
+        <option name="charting.chart.stackMode">default</option>
+        <option name="charting.chart.style">shiny</option>
+        <option name="charting.drilldown">all</option>
+        <option name="charting.layout.splitSeries">0</option>
+        <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+        <option name="charting.legend.placement">right</option>
+      </chart>
+    </panel>
+    <panel>
+      <chart>
+        <title>Events over Time</title>
+        <search>
+          <query>tag=cognia|timechart count by eventType</query>
+          <earliest>-7d</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="charting.axisTitleX.visibility">collapsed</option>
+        <option name="charting.chart">column</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <viz type="sankey_diagram_app.sankey_diagram">
+        <title>Top Talkers</title>
+        <search>
+          <query>tag=cognia tag=media values.communicationtype=CALL| rename "values.length" as duration|stats sum(duration) as td  by "values.sender" "values.recipient"|sort -td|head 50</query>
+          <sampleRatio>1</sampleRatio>
+        </search>
+      </viz>
+    </panel>
+    <panel>
+      <viz type="sankey_diagram_app.sankey_diagram">
+        <title>Top Texters</title>
+        <search>
+          <query>tag=cognia tag=media values.communicationtype=SMS| rename "values.length" as duration|stats count as td  by "values.sender" "values.recipient"|sort -td|head 50</query>
+          <earliest>0</earliest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+      </viz>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>tag=cognia tag=policy tag=set|rename "contact.account.name" as account|rename "values.key" as setting|rename "values.oldValue" as from|rename "values.newValue" as to| table account setting from to</query>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">20</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">cell</option>
+        <option name="percentagesRow">false</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>

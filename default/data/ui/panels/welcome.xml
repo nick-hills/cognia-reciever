@@ -1,0 +1,39 @@
+<panel>
+
+  <title>Cognia Event Framework</title>
+
+  <html>
+
+      
+    
+    <h2>Welcome to the Cognia Splunk Event Receiver</h2>
+<table><tr><td>
+This application is to demonstrate the use of the Cognia Application Framework and how it can be used to send events to event reporting and alerting systems to drive realtime intelligence and auditing of recording and compliance events spanning all communications intelligence across:
+<ul>
+    <li>Mobile</li>
+<li>On Premise Fixed Line</li>
+<li>Hosted PBX</li>
+<li>Email </li>
+<li>SMS/MMS/BBM/IM</li>
+<li>Social media events and enterprise document management systems.</li>
+  </ul>
+  </td><td>
+  <h3>In this release the following events are supported</h3>
+<ul>
+<li>Call Events (Call Made, Call Complete, Duration)</li>
+<li>Media Storage Events (Device, Type, Date, Size, Totals)</li>
+<li>Media Tagging Events (Tags created/deleted, Tags applied/removed)</li>
+<li>Legal Hold Events (Legal Holds created/deleted, Legal Holds applied/removed)</li>
+<li>Person Auditing (Users created/deleted/updated)</li>
+<li>Device Auditing (Devices added/deleted, Devices enabled/disabled)</li>
+  </ul>
+
+The application uses the Splunk HTTP Event Collector, and works in tandem with the Cognia Event Connector from the Cognia App Store.
+
+For details on enabling this application or the Cognia Application Framework, please contact your account manager.
+
+  </td></tr></table>
+
+    </html>
+
+</panel>

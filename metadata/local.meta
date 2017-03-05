@@ -1,0 +1,801 @@
+[app/ui]
+version = 6.3.3
+modtime = 1455575528.061395000
+
+[app/launcher]
+version = 6.3.3
+modtime = 1455575528.069558000
+
+[props/jamie-test/rename]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673612.394322000
+
+[eventtypes/cognia%3AapplicationInstanceCreated]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488543231.304282000
+
+[eventtypes/cognia%3AdeviceAdded]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488543665.619391000
+
+[eventtypes/cognia%3AdeviceRemoved]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488543671.458216000
+
+[eventtypes/cognia%3AmediaAdded]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488543677.692844000
+
+[eventtypes/cognia%3ApersonCreated]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488543688.132883000
+
+[eventtypes/cognia%3ApersonMoved]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488543694.878503000
+
+[eventtypes/cognia%3ApersonRemoved]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488543700.691793000
+
+[tags/eventtype%3Dcognia%253AapplicationInstanceCreated/added]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673707.765588000
+
+[tags/eventtype%3Dcognia%253AapplicationInstanceCreated/application]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673715.710478000
+
+[tags/eventtype%3Dcognia%253AapplicationInstanceCreated/cognia]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673721.485894000
+
+[tags/eventtype%3Dcognia%253AapplicationInstanceCreated/created]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673731.016511000
+
+[tags/eventtype%3Dcognia%253AdeviceAdded/added]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673737.303306000
+
+[tags/eventtype%3Dcognia%253AdeviceAdded/cognia]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673744.178520000
+
+[tags/eventtype%3Dcognia%253AdeviceAdded/device]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673751.172110000
+
+[tags/eventtype%3Dcognia%253AdeviceRemoved/cognia]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673757.804326000
+
+[tags/eventtype%3Dcognia%253AdeviceRemoved/device]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673764.871917000
+
+[tags/eventtype%3Dcognia%253AdeviceRemoved/removed]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673775.802497000
+
+[tags/eventtype%3Dcognia%253AmediaAdded/added]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673783.490510000
+
+[tags/eventtype%3Dcognia%253AmediaAdded/cognia]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673790.141005000
+
+[tags/eventtype%3Dcognia%253AmediaAdded/media]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673799.411427000
+
+[tags/eventtype%3Dcognia%253ApersonCreated/added]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673806.153808000
+
+[tags/eventtype%3Dcognia%253ApersonCreated/cognia]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673813.410698000
+
+[tags/eventtype%3Dcognia%253ApersonCreated/person]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673820.640319000
+
+[tags/eventtype%3Dcognia%253ApersonMoved/cognia]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673828.178408000
+
+[tags/eventtype%3Dcognia%253ApersonMoved/moved]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673835.070079000
+
+[tags/eventtype%3Dcognia%253ApersonMoved/person]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673841.267410000
+
+[tags/eventtype%3Dcognia%253ApersonRemoved/cognia]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673850.950115000
+
+[tags/eventtype%3Dcognia%253ApersonRemoved/person]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673858.500672000
+
+[tags/eventtype%3Dcognia%253ApersonRemoved/removed]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454673866.619042000
+
+[eventtypes/cognia%3AapplicationInstanceDisabled]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488543227.250323000
+
+[eventtypes/cognia%3AapplicationInstanceEnabled]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488543238.595088000
+
+[tags/eventtype%3Dcognia%253AapplicationInstanceDisabled]
+version = 6.2.2
+modtime = 1454676988.138640000
+
+[props/cognia%3Aevents/FIELDALIAS-mediatype]
+export = none
+owner = admin
+version = 6.2.2
+modtime = 1454681535.887596000
+
+[views/media]
+owner = admin
+version = 6.5.2
+modtime = 1488544588.804785000
+
+[nav/default]
+version = 6.5.2
+modtime = 1488750814.785602000
+
+[views/person]
+owner = admin
+version = 6.5.2
+modtime = 1488705332.324159000
+
+[views/devices]
+owner = admin
+version = 6.5.2
+modtime = 1488705625.228521000
+
+[app/package/check_for_updates]
+version = 6.3.3
+modtime = 1455575528.073821000
+
+[views/tags]
+owner = admin
+version = 6.5.2
+modtime = 1488544694.131543000
+
+[views/holds]
+owner = admin
+version = 6.5.2
+modtime = 1488544754.055959000
+
+[tags/eventtype%3Dcognia%253AmediaHoldAdded]
+version = 6.5.2
+modtime = 1488543292.538092000
+
+[times/Rolling%2024hrs]
+export = none
+owner = admin
+version = 6.3.3
+modtime = 1454965535.199066000
+
+[savedsearches/__Populate-tags.csv]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488549289.354381000
+
+[savedsearches/__Populate-holds.csv]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488549448.121082000
+
+[savedsearches/__Populate-accounts.csv]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488549552.904982000
+
+[savedsearches/__Populate-persons.csv]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488549054.289901000
+
+[savedsearches/__Populate-nodes.csv]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488549280.867310000
+
+[tags/eventtype%3Dcognia%253AorganisationNodeCreated]
+version = 6.5.2
+modtime = 1488541642.180053000
+
+[tags/eventtype%3Dcognia%253AorganisationNodeMoved]
+version = 6.5.2
+modtime = 1488541630.876125000
+
+[tags/eventtype%3Dcognia%253AorganisationNodeRemoved]
+version = 6.5.2
+modtime = 1488541618.765620000
+
+[tags/eventtype%3Dcognia%253AorganisationNodeUpdated]
+version = 6.5.2
+modtime = 1488541606.527135000
+
+[views/home]
+owner = admin
+version = 6.5.2
+modtime = 1488751291.079459000
+
+[panels/welcome]
+export = none
+owner = admin
+version = 6.3.3
+modtime = 1455574578.576857000
+
+[app/install/install_source_checksum]
+version = 6.3.0
+modtime = 1455631271.100771000
+
+[eventtypes/tag-cognia]
+export = system
+owner = nick.hills
+version = 6.5.0
+modtime = 1481921011.408891000
+
+[tags/eventtype%3Dtag-cognia]
+export = system
+owner = nick.hills
+version = 6.5.0
+modtime = 1481921011.441527000
+
+[tags/eventtype%3Dcognia%253AmediaAdded]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488543677.697123000
+
+[eventtypes/cognia%3AdeviceMoved]
+version = 6.5.2
+modtime = 1488543101.630699000
+
+[eventtypes/cognia%3AdeviceUpdated]
+version = 6.5.2
+modtime = 1488543256.121665000
+
+[views/mediastatus]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nick.hills
+version = 6.5.2
+modtime = 1488750385.479138000
+
+[eventtypes/cognia%3AmediaRuleFired]
+version = 6.5.2
+modtime = 1488543322.220015000
+
+[tags/eventtype%3Dcognia%253AmediaRuleFired]
+version = 6.5.2
+modtime = 1488543322.251150000
+
+[eventtypes/cognia%3AmediaStatusDeleted]
+version = 6.5.2
+modtime = 1488541793.372397000
+
+[tags/eventtype%3Dcognia%253AmediaStatusDeleted]
+version = 6.5.2
+modtime = 1488541793.394803000
+
+[eventtypes/cognia%3AmediaStatusHeld]
+version = 6.5.2
+modtime = 1488541781.513755000
+
+[tags/eventtype%3Dcognia%253AmediaStatusHeld]
+version = 6.5.2
+modtime = 1488541781.535677000
+
+[eventtypes/cognia%3AmediaStatusPurged]
+version = 6.5.2
+modtime = 1488541771.611098000
+
+[tags/eventtype%3Dcognia%253AmediaStatusPurged]
+version = 6.5.2
+modtime = 1488541771.633243000
+
+[eventtypes/cognia%3AmediaTagAdded]
+version = 6.5.2
+modtime = 1488541703.062659000
+
+[tags/eventtype%3Dcognia%253AmediaTagAdded]
+version = 6.5.2
+modtime = 1488541703.084917000
+
+[eventtypes/cognia%3AmediaMoved]
+version = 6.5.2
+modtime = 1488543312.622287000
+
+[tags/eventtype%3Dcognia%253AmediaMoved]
+version = 6.5.2
+modtime = 1488543312.654232000
+
+[eventtypes/cognia%3AmediaHoldAdded]
+version = 6.5.2
+modtime = 1488543292.515967000
+
+[eventtypes/cognia%3AmediaHoldRemoved]
+version = 6.5.2
+modtime = 1488543301.468100000
+
+[tags/eventtype%3Dcognia%253AmediaHoldRemoved]
+version = 6.5.2
+modtime = 1488543301.496336000
+
+[eventtypes/cognia%3Aholdedited]
+version = 6.5.2
+modtime = 1488543275.299752000
+
+[tags/eventtype%3Dcognia%253Aholdedited]
+version = 6.5.2
+modtime = 1488543275.323843000
+
+[tags/eventtype%3Dcognia%253AdeviceAdded]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488543665.624000000
+
+[eventtypes/cognia%3AcallEnded]
+version = 6.5.2
+modtime = 1488542941.840216000
+
+[tags/eventtype%3Dcognia%253AcallEnded]
+version = 6.5.2
+modtime = 1488542941.862146000
+
+[eventtypes/cognia%3AcallConnected]
+version = 6.5.2
+modtime = 1488542932.656177000
+
+[tags/eventtype%3Dcognia%253AcallConnected]
+version = 6.5.2
+modtime = 1488542932.677937000
+
+[eventtypes/cognia%3AcallRecordingCompleted]
+version = 6.5.2
+modtime = 1488543198.972519000
+
+[tags/eventtype%3Dcognia%253AcallRecordingCompleted]
+version = 6.5.2
+modtime = 1488543199.009619000
+
+[eventtypes/cognia%3AcallRecordingStarted]
+version = 6.5.2
+modtime = 1488543209.772403000
+
+[tags/eventtype%3Dcognia%253AcallRecordingStarted]
+version = 6.5.2
+modtime = 1488543209.805773000
+
+[eventtypes/cognia%3AcallStarted]
+version = 6.5.2
+modtime = 1488542954.910618000
+
+[tags/eventtype%3Dcognia%253AcallStarted]
+version = 6.5.2
+modtime = 1488542954.933323000
+
+[tags/eventtype%3Dcognia%253AdeviceMoved]
+version = 6.5.2
+modtime = 1488543101.653387000
+
+[tags/eventtype%3Dcognia%253AdeviceRemoved]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488543671.462592000
+
+[tags/eventtype%3Dcognia%253AdeviceUpdated]
+version = 6.5.2
+modtime = 1488543256.144593000
+
+[eventtypes/cognia%3AholdAdded]
+version = 6.5.2
+modtime = 1488543266.360773000
+
+[tags/eventtype%3Dcognia%253AholdAdded]
+version = 6.5.2
+modtime = 1488543266.383538000
+
+[eventtypes/cognia%3AholdRemoved]
+version = 6.5.2
+modtime = 1488542831.934786000
+
+[tags/eventtype%3Dcognia%253AholdRemoved]
+version = 6.5.2
+modtime = 1488542831.956761000
+
+[eventtypes/cognia%3AmediaTagRemoved]
+version = 6.5.2
+modtime = 1488541650.496131000
+
+[tags/eventtype%3Dcognia%253AmediaTagRemoved]
+version = 6.5.2
+modtime = 1488541650.518345000
+
+[eventtypes/cognia%3AorganisationNodeMoved]
+version = 6.5.2
+modtime = 1488541630.845603000
+
+[eventtypes/cognia%3AorganisationNodeCreated]
+version = 6.5.2
+modtime = 1488541642.149920000
+
+[eventtypes/cognia%3AorganisationNodeRemoved]
+version = 6.5.2
+modtime = 1488541618.743024000
+
+[eventtypes/cognia%3AorganisationNodeUpdated]
+version = 6.5.2
+modtime = 1488541606.494823000
+
+[eventtypes/cognia%3ApciCorrelation]
+version = 6.5.2
+modtime = 1488541254.119555000
+
+[eventtypes/cognia%3ApciDestroy]
+version = 6.5.2
+modtime = 1488541256.778178000
+
+[eventtypes/cognia%3ApciPayment]
+version = 6.5.2
+modtime = 1488541260.161850000
+
+[eventtypes/cognia%3ApciUnassign]
+version = 6.5.2
+modtime = 1488541263.105525000
+
+[tags/eventtype%3Dcognia%253ApersonCreated]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488543688.137113000
+
+[tags/eventtype%3Dcognia%253ApersonMoved]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488543694.882841000
+
+[tags/eventtype%3Dcognia%253ApersonRemoved]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488543700.696115000
+
+[eventtypes/cognia%3ApersonUpdated]
+version = 6.5.2
+modtime = 1488703866.042775000
+
+[tags/eventtype%3Dcognia%253ApersonUpdated]
+version = 6.5.2
+modtime = 1488703866.070940000
+
+[eventtypes/cognia%3AtagAdded]
+version = 6.5.2
+modtime = 1488543728.841133000
+
+[tags/eventtype%3Dcognia%253AtagAdded]
+version = 6.5.2
+modtime = 1488543728.871335000
+
+[eventtypes/cognia%3AtagEdited]
+version = 6.5.2
+modtime = 1488541547.515931000
+
+[tags/eventtype%3Dcognia%253AtagEdited]
+version = 6.5.2
+modtime = 1488541547.537721000
+
+[eventtypes/cognia%3AtagRemoved]
+version = 6.5.2
+modtime = 1488541563.255988000
+
+[tags/eventtype%3Dcognia%253AtagRemoved]
+version = 6.5.2
+modtime = 1488541563.278455000
+
+[eventtypes/cognia%3AapplicationInstanceRemoved]
+version = 6.5.2
+modtime = 1488543223.195578000
+
+[savedsearches/__Populate-devices.csv]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488549881.191822000
+
+[savedsearches/__Populate-licences.csv]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488550300.252584000
+
+[eventtypes/cognia%3AuserAdded]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488556130.657707000
+
+[tags/eventtype%3Dcognia%253AuserAdded]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488556130.663188000
+
+[eventtypes/cognia%3AuserRemoved]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488556217.475226000
+
+[tags/eventtype%3Dcognia%253AuserRemoved]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488556217.480883000
+
+[tags/eventtype%3Dcognia%253AuserMoved]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488561303.501807000
+
+[savedsearches/__Populate-users.csv]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488561108.502051000
+
+[eventtypes/cognia%3AuserEdited]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488564456.243819000
+
+[tags/eventtype%3Dcognia%253AuserEdited]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488564456.248472000
+
+[eventtypes/cognia%3AlicenseAdded]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488564464.423912000
+
+[tags/eventtype%3Dcognia%253AlicenseAdded]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488564464.430232000
+
+[eventtypes/cognia%3ApolicyCleared]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488564470.937852000
+
+[tags/eventtype%3Dcognia%253ApolicyCleared]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488564470.944083000
+
+[eventtypes/cognia%3AlicenseRemoved]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488564479.221176000
+
+[tags/eventtype%3Dcognia%253AlicenseRemoved]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488564479.227474000
+
+[eventtypes/cognia%3AlicenseUpdated]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488564489.355935000
+
+[tags/eventtype%3Dcognia%253AlicenseUpdated]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488564489.362259000
+
+[eventtypes/cognia%3ApolicySet]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488564499.641687000
+
+[tags/eventtype%3Dcognia%253ApolicySet]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488564499.647936000
+
+[eventtypes/cognia%3AroleAdded]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488565032.055226000
+
+[tags/eventtype%3Dcognia%253AroleAdded]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488565032.061910000
+
+[eventtypes/cognia%3AroleEdited]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488565040.103745000
+
+[tags/eventtype%3Dcognia%253AroleEdited]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488565040.110336000
+
+[eventtypes/cognia%3AroleRemoved]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488565052.361113000
+
+[tags/eventtype%3Dcognia%253AroleRemoved]
+export = system
+owner = admin
+version = 6.5.2
+modtime = 1488565052.367720000
+
+[views/over]
+owner = admin
+version = 6.5.2
+modtime = 1488747579.687414000
+
+[datamodels/Cognia]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488706123.313871000
+
+[models/Cognia]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488706123.320017000
+
+[views/changes]
+owner = admin
+version = 6.5.2
+modtime = 1488746440.862580000

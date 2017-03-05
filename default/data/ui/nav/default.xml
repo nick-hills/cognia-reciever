@@ -1,0 +1,9 @@
+<nav search_view="search" color="#5882FA">
+  <view name="home" default='true' />
+  <view name="media" />
+  <view name="person" />
+  <view name="devices" />
+  <view name="tags" />
+  <view name="holds" />
+  <view name="search" />
+</nav>

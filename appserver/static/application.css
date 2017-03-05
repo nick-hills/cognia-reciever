@@ -1,0 +1,12 @@
+
+.splunk-status-indicator { 
+    text-align: center;
+    font-weight: bold; 
+    line-height: 100%;
+    white-space: nowrap;
+}
+
+.shared-reportvisualizer.ui-resizable{
+    height: 150px !important;
+}
+

@@ -1,0 +1,123 @@
+<form>
+  <label>Tags</label>
+  <fieldset submitButton="false">
+    <input type="time" token="timePicker" searchWhenChanged="true">
+      <label>Time Range</label>
+      <default>
+        <earliest>rt-24h</earliest>
+        <latest>rt</latest>
+      </default>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <single>
+        <title>Media Tags Applied</title>
+        <search>
+          <query>tag=cognia tag=mediatag tag=added|eval Hold='values.reason'|stats count</query>
+          <earliest>$timePicker.earliest$</earliest>
+          <latest>$timePicker.latest$</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">none</option>
+        <option name="numberPrecision">0</option>
+        <option name="showSparkline">1</option>
+        <option name="showTrendIndicator">1</option>
+        <option name="trendColorInterpretation">standard</option>
+        <option name="trendDisplayMode">absolute</option>
+        <option name="useColors">0</option>
+        <option name="useThousandSeparators">1</option>
+        <option name="drilldown">none</option>
+        <option name="linkView">search</option>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <title>Media Tags Removed</title>
+        <search>
+          <query>tag=cognia tag=mediatag tag=removed|eval Hold='values.reason'|stats count</query>
+          <earliest>$timePicker.earliest$</earliest>
+          <latest>$timePicker.latest$</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">none</option>
+        <option name="numberPrecision">0</option>
+        <option name="showSparkline">1</option>
+        <option name="showTrendIndicator">1</option>
+        <option name="trendColorInterpretation">standard</option>
+        <option name="trendDisplayMode">absolute</option>
+        <option name="useColors">0</option>
+        <option name="useThousandSeparators">1</option>
+        <option name="drilldown">none</option>
+        <option name="linkView">search</option>
+      </single>
+    </panel>
+    <panel>
+      <chart>
+        <title>Holds Applied</title>
+        <search>
+          <query>tag=cognia tag=mediatag tag=added|eval Tag='values.tag'|stats count by Tag</query>
+          <earliest>$timePicker.earliest$</earliest>
+          <latest>$timePicker.latest$</latest>
+        </search>
+        <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
+        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.axisTitleY.visibility">visible</option>
+        <option name="charting.axisTitleY2.visibility">visible</option>
+        <option name="charting.axisX.scale">linear</option>
+        <option name="charting.axisY.scale">linear</option>
+        <option name="charting.axisY2.enabled">0</option>
+        <option name="charting.axisY2.scale">inherit</option>
+        <option name="charting.chart">pie</option>
+        <option name="charting.chart.bubbleMaximumSize">50</option>
+        <option name="charting.chart.bubbleMinimumSize">10</option>
+        <option name="charting.chart.bubbleSizeBy">area</option>
+        <option name="charting.chart.nullValueMode">gaps</option>
+        <option name="charting.chart.showDataLabels">none</option>
+        <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+        <option name="charting.chart.stackMode">default</option>
+        <option name="charting.chart.style">shiny</option>
+        <option name="charting.drilldown">all</option>
+        <option name="charting.layout.splitSeries">0</option>
+        <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+        <option name="charting.legend.placement">right</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <title>Tag Management</title>
+        <search>
+          <query>tag=cognia tag=tag|eval path='objectPath.organisationPath{}.name'|eval cfname='contact.firstName'|eval clname='contact.lastName'|eval Contact=cfname." ".clname|eval tagName='values.tag'|eval tagColour='values.colour'|eval ctime=(round('values.created'/1000))|eval UpdateTime=strftime(ctime,"%m/%d/%y %H:%M:%S") |table time eventType Contact tagName tagColour |sort -time</query>
+          <earliest>$timePicker.earliest$</earliest>
+          <latest>$timePicker.latest$</latest>
+        </search>
+        <option name="wrap">true</option>
+        <option name="rowNumbers">false</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">cell</option>
+        <option name="count">10</option>
+      </table>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <title>Media Tagging</title>
+        <search>
+          <query>tag=cognia tag=mediatag|eval mediaId=id| eval Location='objectPath.organisationPath{}.name'|eval Device='objectPath.device.deviceNumber'|eval cfname='contact.firstName'|eval clname='contact.lastName'|eval Contact=cfname." ".clname|eval tagName='values.tag'|eval tagColour='values.colour'|eval pfname='objectPath.person.firstName'| eval plname='objectPath.person.lastName'|eval Person=pfname." ".plname|eval ctime=(round('values.created'/1000))|eval UpdateTime=strftime(ctime,"%m/%d/%y %H:%M:%S") |table time eventType tagName Location Person Device |sort -time</query>
+          <earliest>$timePicker.earliest$</earliest>
+          <latest>$timePicker.latest$</latest>
+        </search>
+        <option name="wrap">true</option>
+        <option name="rowNumbers">false</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">cell</option>
+        <option name="count">10</option>
+      </table>
+    </panel>
+  </row>
+</form>

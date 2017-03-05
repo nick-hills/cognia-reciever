@@ -1,0 +1,25 @@
+{
+    "modelName": "Cognia",
+    "displayName": "Cognia",
+    "description": "",
+    "objectSummary": {
+        "Event-Based": 0,
+        "Transaction-Based": 0,
+        "Search-Based": 1
+    },
+    "objects": [
+        {
+            "objectName": "RootObject",
+            "displayName": "Cognia",
+            "parentName": "BaseSearch",
+            "fields": [],
+            "calculations": [],
+            "constraints": [],
+            "lineage": "RootObject",
+            "baseSearch": "((index=\"main\") ()) | fields \"_time\", \"account.id\", \"account.name\", \"account.portalId\", \"applicationIdentifier\", \"applicationInstanceIdentifier\", \"contact.account.id\", \"contact.account.name\", \"contact.account.portalId\", \"contact.email\", \"contact.firstName\", \"contact.id\", \"contact.lastName\", \"eventType\", \"id\", \"objectPath.device.deviceNumber\", \"objectPath.device.id\", \"objectPath.device.label\", \"objectPath.licence.assigned\", \"objectPath.licence.id\", \"objectPath.licence.label\", \"objectPath.licence.name\", \"objectPath.licence.quantity\", \"objectPath.media.id\", \"objectPath.organisationPath{}.hasDevices\", \"objectPath.organisationPath{}.hasPeople\", \"objectPath.organisationPath{}.id\", \"objectPath.organisationPath{}.name\", \"objectPath.person.email\", \"objectPath.person.firstName\", \"objectPath.person.id\", \"objectPath.person.lastName\", \"operationId\", \"previous.email\", \"previous.firstName\", \"previous.id\", \"previous.lastLoggedIn\", \"previous.role.accountPermissions{}\", \"previous.role.childPermissions{}\", \"previous.role.custom\", \"previous.role.id\", \"previous.role.name\", \"previous.status\", \"values.about\", \"values.accountId\", \"values.colour\", \"values.commentary\", \"values.communicationtype\", \"values.contactEmail\", \"values.created\", \"values.currentOrgnode\", \"values.currentPerson\", \"values.deviceId\", \"values.email\", \"values.eventType\", \"values.failTagId\", \"values.firstName\", \"values.holdId\", \"values.id\", \"values.incoming\", \"values.key\", \"values.label\", \"values.lastLoggedIn\", \"values.lastName\", \"values.length\", \"values.licenseId\", \"values.mimetype\", \"values.newValue\", \"values.oldValue\", \"values.reason\", \"values.recipient\", \"values.role.accountPermissions{}\", \"values.role.childPermissions{}\", \"values.role.custom\", \"values.role.id\", \"values.role.name\", \"values.ruleData\", \"values.searchPackId\", \"values.sender\", \"values.size\", \"values.status\", \"values.tag\", \"values.tagId\""
+        }
+    ],
+    "objectNameList": [
+        "RootObject"
+    ]
+}

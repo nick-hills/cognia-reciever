@@ -1,0 +1,11 @@
+<nav search_view="search" color="#5882FA">
+  <view name="home" default='true' />
+  <view name="over"/>
+   <view name="changes"/>
+  <view name="media" />
+  <view name="mediarules" />
+  <view name="mediastatus" />
+
+  <view name="data_models" />
+  <view name="search" />
+</nav>
