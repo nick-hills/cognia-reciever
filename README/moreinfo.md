@@ -40,10 +40,26 @@ Review the licence, click to accept and click next.
 
 ![alt tag](cognia-splunk-config-04.png)
 
-Enter the address of your Splunk Http Event Collector and specifiy the port number.
-If your Splunk adminsitrator has provided you a specific HEC Token you can enter this, otherwise leave this field blank.
-If you require a specific sourcetype name you can override the default "cognia:event". Leave this field blank unless you plan to update the Cognia-Reciver Splunk Application.
+* Enter the address of your Splunk Http Event Collector and specifiy the port number.
+* If your Splunk adminsitrator has provided you a specific HEC Token you can enter this, otherwise leave this field blank.
+* If you require a specific sourcetype name you can override the default "cognia:event". Leave this field blank unless you plan to update the Cognia-Reciver Splunk Application.
 
 ![alt tag](cognia-splunk-config-05.png)
 
 Choose where in your organisation structure to install the application. In most cases you will wish to do so at the root of your account.
+
+##Check Events are being recieved by Splunk
+* Login to your Splunk environment.
+* Generate some events - make a phonecall, or update a device or user.
+* Perform a search for `tag=cognia` and confirm that your Splunk environment is recieving events
+
+![alt tag](splunk-events-01.png)
+
+Confirm events are present in Splunk.
+
+After events have been generated, you can check out the dashboards to see the status of your environment.
+
+![alt tag](splunk-events-02.png)
+![alt tag](splunk-events-03.png)
+![alt tag](splunk-events-04.png)
+![alt tag](splunk-events-05.png)
