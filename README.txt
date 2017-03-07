@@ -24,10 +24,4 @@ For details on enabling this application or the Cognia Application Framework, pl
 
 ###Installation & Configuration
 
-This application uses the Splunk HTTP Event Collector.
-
-You will need to configure a data input on a TCP port of your choice (TLS recommended). The application expects a source type of ‘cognia:event’, however if you have a naming format for your data inputs, you can use source type renaming to apply a secondary source type name.
-
-Once your Splunk installation is configured, and you have generated a Splunk authentication token you can enable the Cognia Event Connector application via the Cognia Console and provide details of your Splunk Endpoint, TCP Port and authentication token to enable publishing of events to your Splunk Forwarder.
-
-For assistance configuring your environment contact support@cognia.com or your Cognia reseller.
+See the installation and configuration documentation in the /README folder, or online at https://github.com/nickhills81/cognia-reciever/blob/master/README/moreinfo.md
