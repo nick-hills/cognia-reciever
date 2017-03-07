@@ -4,7 +4,7 @@
     <input type="time" token="timePicker" searchWhenChanged="true">
       <label>Time Range</label>
       <default>
-        <earliest>-24h@h</earliest>
+        <earliest>-7d@h</earliest>
         <latest>now</latest>
       </default>
     </input>
